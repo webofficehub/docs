@@ -49,9 +49,9 @@ When a section in this documentation set mentions storage, persistence, retentio
 
 Suggested target references:
 
-- [v-nodex storage documentation](https://github.com/vector-network/v-nodex/blob/main/docs/storage.md)
-- [v-nodex spatial storage documentation](https://github.com/vector-network/v-nodex/blob/main/docs/spatial-storage.md)
-- [v-nodex immutability documentation](https://github.com/vector-network/v-nodex/blob/main/docs/immutability.md)
+- [v-nodex storage documentation](https://github.com/vnetworkx/v-nodex/blob/main/docs/storage.md)
+- [v-nodex spatial storage documentation](https://github.com/vnetworkx/v-nodex/blob/main/docs/spatial-storage.md)
+- [v-nodex immutability documentation](https://github.com/vnetworkx/v-nodex/blob/main/docs/immutability.md)
 
 ## Recommended reading order
 
@@ -73,7 +73,7 @@ The words **MUST**, **MUST NOT**, **SHOULD**, **SHOULD NOT**, and **MAY** are to
 
 ## Naming convention
 
-In this project, the prefix `v` is used to signal vector identity or vector-network identity. The suffix `x` is used to indicate a space, environment, or system layer. Depending on context, names such as `vNetworkx`, `v-networkx`, or related forms can refer to a vector-space-oriented implementation or subsystem of the broader Vector Network concept.
+In this project, the prefix `v` is used to signal vector identity or vnetworkx identity. The suffix `x` is used to indicate a space, environment, or system layer. Depending on context, names such as `vNetworkx`, `v-networkx`, or related forms can refer to a vector-space-oriented implementation or subsystem of the broader Vector Network concept.
 
 ## File structure notes
 

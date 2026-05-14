@@ -117,6 +117,6 @@ For migrations and cross-space actions, records MUST preserve:
 The record stream is the protocol's memory. If the records are correct, the state can be reconstructed; if the records are incomplete, the system loses verifiability.
 
 When readers need to understand how records are stored, persisted, or replayed at the implementation layer, they should follow the linked `v-nodex` documentation:
-- [storage.md](https://github.com/vector-network/v-nodex/blob/main/docs/storage.md)
-- [spatial-storage.md](https://github.com/vector-network/v-nodex/blob/main/docs/spatial-storage.md)
-- [immutability.md](https://github.com/vector-network/v-nodex/blob/main/docs/immutability.md)
+- [storage.md](https://github.com/vnetworkx/v-nodex/blob/main/docs/storage.md)
+- [spatial-storage.md](https://github.com/vnetworkx/v-nodex/blob/main/docs/spatial-storage.md)
+- [immutability.md](https://github.com/vnetworkx/v-nodex/blob/main/docs/immutability.md)

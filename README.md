@@ -1,107 +1,92 @@
+# Vector Network Documentation
 
+This repository contains the canonical documentation set for Vector Network.
 
-This directory contains the master documentation set for Vector Network, including the canonical protocol specification, state model, operational rules, certification rules, security rules, language references, SDK contracts, and supporting examples.
+It covers the protocol specification, state model, formal rules, operational behavior, certification logic, security guidance, language reference material, SDK contracts, and supporting examples. The documents are arranged so readers can move from overview to implementation detail without needing prior context.
 
-Vector Network is not described as a blockchain. It is a distinct decentralized vector ecosystem built around a deterministic kernel, immutable recordkeeping, and multidimensional state representation. The documents in this directory explain the system from different angles so that readers can move from high-level understanding to implementation detail without needing to already know the project.
+Vector Network is not described as a blockchain. It is a decentralized vector system built around a deterministic kernel, immutable recordkeeping, and multidimensional state representation.
 
-## What this directory is for
+## What this repository is for
 
-This documentation set is intended to:
+Use this repository to:
 
-- explain what Vector Network is in plain language
-- define the vector-based state model
-- describe how transfers, drains, projections, and reconstructions work
-- specify certification, AuthRatio, and validation rules
-- define how immutable records are written and replayed
-- describe security expectations for wallets, keys, signatures, and ownership
-- provide formal notation for implementers and auditors
-- document the language, SDK, and visualization layers built on top of the kernel
-- provide direct cross-references to implementation-level documentation in `v-nodex` where storage, persistence, immutability, and runtime mechanics are explained
+- understand Vector Network in plain language
+- learn the vector-based state model
+- review transfers, drains, projections, and reconstructions
+- understand certification, AuthRatio, and validation rules
+- see how immutable records are written and replayed
+- review security expectations for wallets, keys, signatures, and ownership
+- find formal notation for implementers and auditors
+- navigate the language, SDK, and visualization layers built on the kernel
 
-## Document map
+## Repository layout
 
-- `SPEC.md` — master protocol rulebook and normative specification
-- `GLOSSARY.md` — canonical terminology and field definitions
-- `STATE_MODEL.md` — mathematical state model for vectors and vector spaces
-- `CANONICAL_STATE_MODEL.md` — canonical state layout and state representation rules
-- `OPERATIONS.md` — operational rules for transfer, projection, reconstruction, drain, and origin
-- `OPERATIONS_FINITE_TRANSITIONS.md` — operation transition structure and state-machine flow details
-- `CERTIFICATION.md` — certification, AuthRatio, validation, and rejection logic
-- `AUTHRATIO.md` — AuthRatio scoring model, weighting, and validation factors
-- `RECORDS.md` — immutable record format and event log requirements
-- `SECURITY.md` — ownership, signatures, key handling, and threat controls
-- `ERRORS.md` — protocol error classes and failure handling
-- `GOVERNANCE.md` — versioning, upgrades, parameters, and compatibility rules
-- `EXAMPLES.md` — worked examples and learning-oriented scenarios
-- `FORMALISM.md` — formal notation, invariants, and proof obligations
-- `VECTOR_LANGUAGE_SPEC.md` — language grammar, syntax, and execution rules
-- `VECTOR_LANGUAGE_REFERENCE.md` — language reference material and usage notes
-- `SDK_SPEC.md` — SDK architecture, interface expectations, and integration rules
-- `SDK_FUNCTION_CONTRACTS.md` — callable SDK behavior and function-level contracts
-- `VISUALIZATION_FRAMEWORK.md` — ledger views, state visualizations, and explorer concepts
-- `v-nodex/docs/storage.md` — storage model, persistence rules, and record materialization
-- `v-nodex/docs/spatial-storage.md` — spatial storage layout and vector-space persistence
-- `v-nodex/docs/immutability.md` — immutability guarantees and append-only storage behavior
+- `README.md` — entry point for the documentation repository
+- `SECURITY.md` — security policy and reporting guidance
+- `experiments.py` — reference experiments and exploratory code
+- `MANIFEST.json` — repository manifest and document inventory
 
-## Related implementation references
+### `docs/overview/`
+- [`QUICK_START.md`](https://github.com/vnetworkx/docs/blob/main/docs/overview/QUICK_START.md) — starting point for new readers
+- [`CONCEPT_MAP.md`](https://github.com/vnetworkx/docs/blob/main/docs/overview/CONCEPT_MAP.md) — high-level map of the system
+- [`STATUS.md`](https://github.com/vnetworkx/docs/blob/main/docs/overview/STATUS.md) — documentation and project status
+- [`LINKS.md`](https://github.com/vnetworkx/docs/blob/main/docs/overview/LINKS.md) — reference links and related resources
 
-When a section in this documentation set mentions storage, persistence, retention, immutability, or on-disk layout, readers should jump to the corresponding `v-nodex` implementation documentation.
+### `docs/core/`
+- [`SPEC.md`](https://github.com/vnetworkx/docs/blob/main/docs/core/SPEC.md) — canonical protocol specification
+- [`FORMALISM.md`](https://github.com/vnetworkx/docs/blob/main/docs/core/FORMALISM.md) — notation, invariants, and proof obligations
+- [`STATE_MODEL.md`](https://github.com/vnetworkx/docs/blob/main/docs/core/STATE_MODEL.md) — mathematical state model
+- [`CANONICAL_STATE_MODEL.md`](https://github.com/vnetworkx/docs/blob/main/docs/core/CANONICAL_STATE_MODEL.md) — canonical representation rules
 
-Suggested target references:
+### `docs/operations/`
+- [`OPERATIONS.md`](https://github.com/vnetworkx/docs/blob/main/docs/operations/OPERATIONS.md) — operational rules
+- [`OPERATIONS_FINITE_TRANSITIONS.md`](https://github.com/vnetworkx/docs/blob/main/docs/operations/OPERATIONS_FINITE_TRANSITIONS.md) — transition flow details
+- [`ERRORS.md`](https://github.com/vnetworkx/docs/blob/main/docs/operations/ERRORS.md) — error classes and failure handling
 
-- [v-nodex storage documentation](https://github.com/vnetworkx/v-nodex/blob/main/docs/storage.md)
-- [v-nodex spatial storage documentation](https://github.com/vnetworkx/v-nodex/blob/main/docs/spatial-storage.md)
-- [v-nodex immutability documentation](https://github.com/vnetworkx/v-nodex/blob/main/docs/immutability.md)
+### `docs/governance/`
+- [`CERTIFICATION.md`](https://github.com/vnetworkx/docs/blob/main/docs/governance/CERTIFICATION.md) — certification and rejection logic
+- [`AUTHRATIO.md`](https://github.com/vnetworkx/docs/blob/main/docs/governance/AUTHRATIO.md) — AuthRatio scoring and validation factors
+- [`GOVERNANCE.md`](https://github.com/vnetworkx/docs/blob/main/docs/governance/GOVERNANCE.md) — versioning, upgrades, and compatibility rules
+
+### `docs/reference/`
+- [`GLOSSARY.md`](https://github.com/vnetworkx/docs/blob/main/docs/reference/GLOSSARY.md) — terminology and field definitions
+- [`RECORDS.md`](https://github.com/vnetworkx/docs/blob/main/docs/reference/RECORDS.md) — immutable record format and event log requirements
+- [`EXAMPLES.md`](https://github.com/vnetworkx/docs/blob/main/docs/reference/EXAMPLES.md) — worked examples
+- [`VISUALIZATION_FRAMEWORK.md`](https://github.com/vnetworkx/docs/blob/main/docs/reference/VISUALIZATION_FRAMEWORK.md) — ledger views and explorer concepts
+
+### `docs/language/`
+- [`VECTOR_LANGUAGE_SPEC.md`](https://github.com/vnetworkx/docs/blob/main/docs/language/VECTOR_LANGUAGE_SPEC.md) — language grammar and execution rules
+
+### `docs/sdk/`
+- [`SDK_SPEC.md`](https://github.com/vnetworkx/docs/blob/main/docs/sdk/SDK_SPEC.md) — SDK architecture and integration rules
+- [`SDK_FUNCTION_CONTRACTS.md`](https://github.com/vnetworkx/docs/blob/main/docs/sdk/SDK_FUNCTION_CONTRACTS.md) — function-level contracts
 
 ## Recommended reading order
 
-1. Read `SPEC.md` first for the canonical protocol overview.
-2. Read `GLOSSARY.md` next so terms are interpreted consistently.
-3. Read `STATE_MODEL.md` and `CANONICAL_STATE_MODEL.md` to understand how vector state is represented.
-4. Read `OPERATIONS.md` and `OPERATIONS_FINITE_TRANSITIONS.md` to understand how state changes happen.
-5. Read `CERTIFICATION.md` and `AUTHRATIO.md` to understand validation and restriction logic.
-6. Read `RECORDS.md` to understand how immutable records are written.
-7. Read `SECURITY.md`, `ERRORS.md`, and `GOVERNANCE.md` for practical protocol safety and maintenance rules.
-8. Read `FORMALISM.md` for strict notation and invariants.
-9. Read `EXAMPLES.md` and `experiments.py` for learning, testing, and experimentation.
-10. Read `VECTOR_LANGUAGE_SPEC.md`, `VECTOR_LANGUAGE_REFERENCE.md`, `SDK_SPEC.md`, `SDK_FUNCTION_CONTRACTS.md`, and `VISUALIZATION_FRAMEWORK.md` for the higher layers built on top of the kernel.
-11. Read the relevant `v-nodex` storage documentation when the topic involves persistence, record storage, storage layout, immutability, or runtime state materialization.
+1. [`docs/overview/QUICK_START.md`](https://github.com/vnetworkx/docs/blob/main/docs/overview/QUICK_START.md)
+2. [`docs/overview/CONCEPT_MAP.md`](https://github.com/vnetworkx/docs/blob/main/docs/overview/CONCEPT_MAP.md)
+3. [`docs/core/SPEC.md`](https://github.com/vnetworkx/docs/blob/main/docs/core/SPEC.md)
+4. [`docs/reference/GLOSSARY.md`](https://github.com/vnetworkx/docs/blob/main/docs/reference/GLOSSARY.md)
+5. [`docs/core/STATE_MODEL.md`](https://github.com/vnetworkx/docs/blob/main/docs/core/STATE_MODEL.md)
+6. [`docs/operations/OPERATIONS.md`](https://github.com/vnetworkx/docs/blob/main/docs/operations/OPERATIONS.md)
+7. [`docs/governance/CERTIFICATION.md`](https://github.com/vnetworkx/docs/blob/main/docs/governance/CERTIFICATION.md)
+8. [`docs/reference/RECORDS.md`](https://github.com/vnetworkx/docs/blob/main/docs/reference/RECORDS.md)
+9. [`SECURITY.md`](https://github.com/vnetworkx/docs/blob/main/SECURITY.md)
+10. [`docs/core/FORMALISM.md`](https://github.com/vnetworkx/docs/blob/main/docs/core/FORMALISM.md)
 
-## Normative language
+## Source of truth
 
-The words **MUST**, **MUST NOT**, **SHOULD**, **SHOULD NOT**, and **MAY** are to be interpreted as normative requirements in the sense of a technical protocol specification.
-
-## Naming convention
-
-In this project, the prefix `v` is used to signal vector identity or vnetworkx identity. The suffix `x` is used to indicate a space, environment, or system layer. Depending on context, names such as `vNetworkx`, `v-networkx`, or related forms can refer to a vector-space-oriented implementation or subsystem of the broader Vector Network concept.
-
-## File structure notes
-
-Some documents in this directory overlap by design. That is intentional.
-
-- `SPEC.md` is the canonical source of truth.
-- Other files may restate parts of the spec in a more focused or more readable form.
-- The language, SDK, visualization, and example documents are supporting layers rather than competing sources of truth.
-- Reference code such as `experiments.py` is educational and experimental unless explicitly promoted into the canonical implementation.
-- Implementation-specific storage behavior belongs in `v-nodex`, while this directory focuses on protocol rules and readable canonical documentation.
-
-## Suggested use by audience
-
-- New readers: start with `SPEC.md`, `GLOSSARY.md`, and `EXAMPLES.md`.
-- Developers: focus on `OPERATIONS.md`, `RECORDS.md`, `SECURITY.md`, `SDK_SPEC.md`, and `SDK_FUNCTION_CONTRACTS.md`.
-- Protocol designers: study `STATE_MODEL.md`, `CANONICAL_STATE_MODEL.md`, `CERTIFICATION.md`, `AUTHRATIO.md`, and `FORMALISM.md`.
-- Tool builders: review `VECTOR_LANGUAGE_SPEC.md`, `VECTOR_LANGUAGE_REFERENCE.md`, and `VISUALIZATION_FRAMEWORK.md`.
-- Maintainers: consult `GOVERNANCE.md` and `ERRORS.md` when changing protocol behavior.
-- Implementers working on persistence or state backends: follow the linked `v-nodex` storage, spatial-storage, and immutability documentation alongside these protocol rules.
+- `docs/core/SPEC.md` is the canonical source of truth.
+- Supporting documents may restate, explain, or specialize the spec.
+- `experiments.py` is educational unless promoted into canonical implementation.
+- Implementation-specific storage behavior belongs in `v-nodex`.
 
 ## Notes for contributors
 
-When editing the documentation set:
-
-- keep terminology consistent across files
+- keep terminology consistent
 - preserve the distinction between canonical rules and explanatory notes
-- avoid introducing hidden assumptions into examples
-- keep the kernel deterministic in every description of execution
+- avoid hidden assumptions in examples
+- keep the kernel deterministic
 - treat record generation as mandatory for successful state transitions
 - keep wallet secrets out of shared state and public records
-- add or update cross-references to `v-nodex` whenever storage, persistence, or immutability concepts are introduced
+- update cross-references when storage, persistence, or immutability concepts are introduced

@@ -27,10 +27,9 @@ Use this repository to:
 - `MANIFEST.json` — repository manifest and document inventory
 
 ### `docs/overview/`
-- [`QUICK_START.md`](https://github.com/vnetworkx/docs/blob/main/overview/QUICK_START.md) — starting point for new readers
+- [`INTRODUCTION.md`](https://github.com/vnetworkx/docs/blob/main/overview/INTRODUCTION.md) — starting point for new readers
 - [`CONCEPT_MAP.md`](https://github.com/vnetworkx/docs/blob/main/overview/CONCEPT_MAP.md) — high-level map of the system
-- [`STATUS.md`](https://github.com/vnetworkx/docs/blob/main/overview/STATUS.md) — documentation and project status
-- [`LINKS.md`](https://github.com/vnetworkx/docs/blob/main/overview/LINKS.md) — reference links and related resources
+- [`OVERVIEW.md`](https://github.com/vnetworkx/docs/blob/main/overview/OVERVIEW.md) — reference links and related resources
 
 ### `docs/core/`
 - [`SPEC.md`](https://github.com/vnetworkx/docs/blob/main/core/SPEC.md) — canonical protocol specification
